@@ -19,7 +19,7 @@ public class Prior_Assignment {
             System.out.println("กรุณาระบุเพศ (M/F)");
             String Gender = scan.nextLine();
 
-            if (Check.CheckGender(Gender) == true) {
+            if (Check.CheckGender(Gender)) {
                 int n2 = 1;
                 while (n2 == 1) {
                     System.out.println("การุณาระบุวันเดือนปีเกิด (ปี พ.ศ.) (yyyy-mm-dd)");
@@ -28,7 +28,7 @@ public class Prior_Assignment {
                     String[] Date_of_Birth_String = Date_of_Birth.split("-");
                     
 
-                    if (Check.CheckDate_of_Birth(Date_of_Birth) == true) {
+                    if (Check.CheckDate_of_Birth(Date_of_Birth)) {
                         for (int i = 0; i < Date_of_Birth_String.length; i++) {
                             Date_of_Birth_Int[i] = Integer.parseInt(Date_of_Birth_String[i]);
                             //System.out.println(Date_of_Birth_Int[i]);

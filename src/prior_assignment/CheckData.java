@@ -72,7 +72,7 @@ public class CheckData {
                     //System.out.println(Date_of_Birth_Int[i]);
                 }
 
-                if (CheckMonth.Print_CheckMonth(Date_of_Birth_Int) == true) {
+                if (CheckMonth.Print_CheckMonth(Date_of_Birth_Int)) {
 
                     return true;
 
